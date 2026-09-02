@@ -1,0 +1,307 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+}
+
+
+#encabezado {
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #333; 
+}
+
+.fondo-inicio { 
+    background-image: url('../img/nav-inicio.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-vinilos { 
+    background-image: url('../img/nav-vinilos.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.fondo-cds { 
+    background-image: url('../img/nav-cd.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+.fondo-tornamesas { 
+    background-image: url('../img/nav-tornamesa.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+#menu-principal ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 0;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    padding: 10px 15px;
+    border-radius: 8px;
+}
+
+#menu-principal a:hover {
+    background-color: rgb(126, 126, 61);
+    color: white;
+}
+
+
+#contenido {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+
+.seccion {
+    text-align: center;
+}
+
+.galeria {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+
+.tarjeta {
+    background-color: white;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    padding: 15px;
+    text-align: center;
+    
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tarjeta:hover {
+    box-shadow: 0 6px 12px rgba(236, 9, 9, 0.3);
+}
+
+
+.tarjeta h3 {
+    white-space: nowrap;     
+    overflow: hidden;        
+    text-overflow: ellipsis; 
+    margin: 10px 0;          
+}
+
+.precio {
+    color: green;    
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.espacio-imagen {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+.espacio-imagen img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.vinilo-album {
+    position: relative;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto 15px auto;
+}
+
+.portada {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: 2;
+    box-shadow: 3px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+}
+
+.disco {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 5%;
+    right: -35%;
+    z-index: 1;
+}
+
+
+.btn-carrito {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20px;
+}
+
+.btn-carrito:hover {
+    background-color: red;
+}
+
+
+.tarjeta.agotado:hover .btn-carrito {
+    background-color: #d9534f;
+    font-size: 0; 
+}
+
+.tarjeta.agotado:hover .btn-carrito::after {
+    content: "AGOTADO";
+    font-size: 14px;
+    color: white;
+}
+
+#pie {
+    background-color: rgb(126, 126, 61);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+
+.calculadora {
+    background-color: #1e1e24;
+    width: 300px;
+    padding: 20px;
+    margin: 50px auto;
+    border: 5px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#pantalla {
+    width: 90%;
+    height: 50px;
+    font-size: 25px;
+    text-align: right;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.calculadora button {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    font-size: 20px;
+    background-color: #2b2b36;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#contacto {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#contacto fieldset {
+    border: 5px solid rgb(126, 126, 61);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#contacto legend {
+    font-weight: bold;
+    color: #333;
+    padding: 0 10px;
+}
+
+#contacto label {
+    font-weight: bold;
+    color: #444;
+}
+
+.ayuda {
+    font-weight: normal;
+    color: #666;
+    font-style: italic;
+    margin-left: 5px;
+}
+
+.caja {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 2.5px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.comprar {
+    width: 100%;
+    background-color: rgb(126, 126, 61);
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.comprar:hover {
+    background-color: #333;
+}
+
+.fpago {
+    display: flex;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.fpago label{
+    font-weight: normal;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
