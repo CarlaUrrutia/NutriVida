@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - NutriVida</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-clinica">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="img/logo-nutrivida.svg" alt="Logo NutriVida" height="50">
+                </a>
+            </div>
+            <div class="nav-centro">
+                <a href="productos.html" class="btn-principal">Reservar hora</a>
+            </div>
+            <div class="nav-derecha">
+                <div class="dropdown">
+                    <a href="#" class="btn-hamburguesa">&#9776;</a>
+                    <div class="dropdown-content menu-alineado">
+                        <a href="login.html">Iniciar Sesión</a>
+                        <a href="registro.html">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <div class="formulario-contenedor">
+            <form name="login" id="contacto" action="">
+                <fieldset>
+                    <legend>Iniciar Sesión</legend>
+
+                    <label for="email">Correo electrónico: <span class="ayuda">(Solo @gmail.com, @outlook.com o @duocuc.cl)</span></label>
+                    <input type="email" id="email" class="caja" placeholder="ejemplo@correo.com" required>
+
+                    <label for="pass">Contraseña: </label>
+                    <input type="password" id="pass" class="caja" placeholder="Ingrese su contraseña" required>
+
+                    <button type="submit" class="btn-principal" style="margin-top: 20px;"> Ingresar </button>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <p>¿No tienes una cuenta? <a href="registro.html">Regístrate aquí</a></p>
+                        <p><a href="index.html">Volver al inicio</a></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer id="pie">
+        <p><small>&copy; 2026 Clínica NutriVida - Tu salud es primero</small></p>
+    </footer>
+
+    <script src="js/login.js"></script>
+</body>
+</html>

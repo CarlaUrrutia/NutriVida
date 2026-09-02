@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Paciente - NutriVida</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar-clinica">
+            <div class="nav-logo">
+                <a href="index.html">
+                    <img src="img/logo-nutrivida.svg" alt="Logo NutriVida" height="50">
+                </a>
+            </div>
+            <div class="nav-centro">
+                <a href="productos.html" class="btn-principal">Reservar hora</a>
+            </div>
+            <div class="nav-derecha">
+                <div class="dropdown">
+                    <a href="#" class="btn-hamburguesa">&#9776;</a>
+                    <div class="dropdown-content menu-alineado">
+                        <a href="login.html">Iniciar Sesión</a>
+                        <a href="registro.html">Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <div class="formulario-contenedor">
+            <form name="registro" id="contacto" action="">
+                <fieldset>
+                    <legend>Registro de Paciente</legend>
+
+                    <label for="nombre">Nombre: </label>
+                    <input type="text" id="nombre" class="caja" placeholder="Ingrese su nombre" required>
+
+                    <label for="apellido">Apellido: </label>
+                    <input type="text" id="apellido" class="caja" placeholder="Ingrese su apellido" required>
+
+                    <label for="rut">RUT: <span class="ayuda">(Sin puntos y con guion. Ej: 12345678-9)</span></label>
+                    <input type="text" id="rut" class="caja" placeholder="Ingrese su RUT" required>
+
+                    <label for="email">Correo electrónico: <span class="ayuda">(Solo @gmail.com, @outlook.com o @duocuc.cl)</span></label>
+                    <input type="email" id="email" class="caja" placeholder="ejemplo@correo.com" required>
+
+                    <label for="pass">Contraseña: <span class="ayuda">(Mínimo 6 caracteres)</span></label>
+                    <input type="password" id="pass" class="caja" placeholder="Cree una contraseña" required>
+
+                    <label for="pass2">Confirmar Contraseña: </label>
+                    <input type="password" id="pass2" class="caja" placeholder="Repita su contraseña" required>
+
+                    <label for="fenac">Fecha de nacimiento: </label>
+                    <input type="date" id="fenac" class="caja" required>
+
+                    <label for="objetivo">Objetivo Nutricional: </label>
+                    <select id="objetivo" class="caja" required>
+                        <option value="">-- Seleccione su objetivo --</option>
+                        <option value="peso">Pérdida de peso</option>
+                        <option value="metabolico">Control metabólico</option>
+                        <option value="deportivo">Nutrición deportiva</option>
+                        <option value="vegano">Alimentación vegetariana / vegana</option>
+                    </select>
+
+                    <button type="submit" class="btn-principal" style="margin-top: 20px;"> Registrarse </button>
+
+                    <div style="text-align: center; margin-top: 20px;">
+                        <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                        <p><a href="index.html">Volver al inicio</a></p>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </main>
+
+    <footer id="pie">
+        <p><small>&copy; 2026 Clínica NutriVida - Tu salud es primero</small></p>
+    </footer>
+
+    <script src="js/registro.js"></script>
+</body>
+</html>
