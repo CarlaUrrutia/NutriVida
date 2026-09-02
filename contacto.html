@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form name="contacto" id="contacto" action="">
+        <fieldset>
+            <legend>Formulario de contacto</legend>
+    <br>
+            <label for="">Nombre: </label>
+            <input type="text" required id="nombre" class="caja" placeholder="Ingrese su nombre"> 
+    <br><br>
+            <label for="">Rut: <span class="ayuda">(Sin puntos y con guion Ej 12345678-9)</span> </label>
+            <input type="text" required id="rut" class="caja" placeholder="Ingrese su rut"> 
+
+    <br><br>
+            <label for="">Correco electronico: <span class="ayuda">Solo @gmail.com, @outlook.com o @duocuc.cl</span> </label>
+            <input type="email" id="email" class="caja" required>
+    <br><br>
+            <label for="">Telefono: <span class="ayuda">(Debe comenzar con +56 seguido de 9 digitos)</span> </label>
+            <input type="tel" id="fono" class="caja" required>
+    <br><br>
+            <label for="">Fecha de nacimiento: </label>
+            <input type="date" id="fenac" class="caja"> 
+    <br><br>
+            <label for="">Seleccione producto: </label>
+            <select name="" id="productos" class="caja">
+                <option value="">-- Seleccione producto --</option>
+                <option value="prod1">Vinilos</option>
+                <option value="prod2">CD's</option>
+                <option value="prod3">Tornamesas</option>
+            </select>
+    <br><br>
+            <label for="">Cantidad: </label>
+            <input type="number" min="1" max="99" id="cantidad" class="caja">
+    <br><br>
+            <label for="">Forma de pago: </label>
+
+            <div class="fpago">
+                <label>
+                        <input type="radio" name="fdepago" id="debito" value="1"> Débito
+                </label>
+                <label>
+                        <input type="radio" name="fdepago" id="credito" value="2"> Crédito
+                </label>
+                <label>
+                        <input type="radio" name="fdepago" id="efectivo" value="3"> Efectivo
+                </label>
+                </div>
+    <br><br>
+            <button type="submit" class="comprar"> Comprar </button>
+
+        </fieldset>
+    </form>
+
+</body>
+<script src="js/validarform.js"></script>
+</html>
