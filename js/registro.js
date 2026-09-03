@@ -17,7 +17,7 @@ formulario.addEventListener("submit", function(event){
         return;
     }
     if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(nombre.value)){
-        alert("El nombre solo debe contener letras.");
+        alert("El nombre solo debe contener letras");
         nombre.focus();
         return;
     }
@@ -28,21 +28,21 @@ formulario.addEventListener("submit", function(event){
         return;
     }    
     if (!/^[A-Za-zÁÉÍÓÚáéíóúÑñ\s]+$/.test(apellido.value)){
-        alert("El apellido solo debe contener letras.");
+        alert("El apellido solo debe contener letras");
         apellido.focus();
         return;
     }
 
     let vRut = /^(0?[1-9][0-9]{6}|[1-9][0-9]{7})-[0-9kK]$/;
     if (!vRut.test(rut.value)){
-        alert("El RUT debe tener el formato 12345678-9 (sin puntos y con guion).");
+        alert("El RUT debe tener el formato 12345678-9 (sin puntos y con guion)");
         rut.focus();
         return;
     }
 
     let vCorreo = /^[^\s@]+@(gmail\.com|outlook\.com|duocuc\.cl)$/;
     if (!vCorreo.test(email.value)){
-        alert("Ingrese un correo valido (@gmail.com, @outlook.com o @duocuc.cl).");
+        alert("Ingrese un correo valido (@gmail.com, @outlook.com o @duocuc.cl)");
         email.focus();
         return;
     }
@@ -86,5 +86,5 @@ formulario.addEventListener("submit", function(event){
         return;
     }
     alert("¡Registro exitoso! Bienvenido a Clínica NutriVida.");
-    formulario.reset(); // Limpia los campos del formulario
+    formulario.reset();
 });
