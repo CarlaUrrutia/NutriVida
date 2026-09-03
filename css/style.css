@@ -41,6 +41,15 @@ body {
     box-sizing: border-box;
 }
 
+.btn-principal:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.btn-inactivo {
+    pointer-events: none;
+}
+
 .navbar-clinica .btn-principal {
     width: auto;
 }
@@ -122,11 +131,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: box-shadow 0.3s ease;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
 }
 
 .tarjeta-producto:hover {
-    box-shadow: 0 6px 12px rgba(255, 77, 90, 0.3);
+    box-shadow: 0 0 15px rgba(255, 77, 90, 0.4);
+    background-color: white;
 }
 
 .imagen-producto {
@@ -237,6 +247,73 @@ label {
     object-fit: cover;
 }
 
+
+.detalle-producto {
+    display: flex;
+    gap: 35px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.detalle-imagen {
+    flex: 1;
+    min-width: 250px;
+    max-width: 420px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.detalle-imagen img {
+    width: 100%;
+    height: 380px;
+    display: block;
+    object-fit: cover;
+}
+
+.detalle-info {
+    flex: 1;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.detalle-info h2 {
+    color: #1a202c;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.detalle-descripcion {
+    color: #4a5568;
+    font-size: 0.95rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+.detalle-meta {
+    background-color: #fff8f8;
+    border: 1px solid #fde0e2;
+    border-radius: 8px;
+    padding: 10px 15px;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.detalle-info .precio {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.detalle-acciones {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
 /* ===== INDEX - SECCIÓN PÉRDIDA DE PESO ===== */
 .seccion-perdida-peso {
     display: flex;
@@ -328,7 +405,7 @@ label {
     color: white;
 }
 
-/* ===== INDEX - CARDS DE CARACTERÍSTICAS ===== */
+
 .caracteristicas-grid {
     display: flex;
     gap: 20px;
@@ -350,12 +427,6 @@ label {
 
 .card-feature:hover {
     box-shadow: 0 6px 16px rgba(255, 77, 90, 0.15);
-}
-
-.card-feature .icon {
-    font-size: 2.5rem;
-    display: block;
-    margin-bottom: 12px;
 }
 
 .card-feature h3 {
@@ -396,14 +467,15 @@ label {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
 
-.contenedor-video iframe {
+.contenedor-video iframe,
+.contenedor-video video {
     width: 100%;
     height: 340px;
     display: block;
     border: none;
 }
 
-/* ===== FOOTER ===== */
+
 .footer-principal {
     background-color: #333;
     color: white;
